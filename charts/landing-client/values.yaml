@@ -26,6 +26,6 @@ ingress:
   hosts:
     - odlli.com
   tls:
-    - secretName: tls-secret
+    - secretName: prod-letsencrypt-tls-secret
       hosts:
         - odlli.com
