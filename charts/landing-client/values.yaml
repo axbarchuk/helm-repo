@@ -1,5 +1,7 @@
 replicaCount: 1
 
+terminationGracePeriod: 30
+
 image:
   repository: gcr.io/odlli-platform/landing-client
   tag: latest

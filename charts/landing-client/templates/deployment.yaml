@@ -19,6 +19,7 @@ spec:
         app.kubernetes.io/name: {{ include "landing-client.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
+      terminationGracePeriodSeconds: {{ .Values.terminationGracePeriod }}
       imagePullSecrets:
         - name: {{ .Values.image.pullSecrets }}
       containers:
