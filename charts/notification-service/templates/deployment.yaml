@@ -19,6 +19,9 @@ spec:
         app.kubernetes.io/name: {{ include "notification-service.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
+      terminationGracePeriodSeconds: {{ .Values.terminationGracePeriod }}
+      imagePullSecrets:
+        - name: {{ .Values.image.pullSecrets }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
