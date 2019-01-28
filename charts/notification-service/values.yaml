@@ -14,7 +14,7 @@ image:
 env:
   profile: prod
   db:
-    host: staging-postgresql-postgresql
+    host: prod-postgresql-postgresql
     port: 5432
     secret: prod-postgres-secret
   oauth:
