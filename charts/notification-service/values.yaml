@@ -1,0 +1,42 @@
+replicaCount: 1
+
+nameOverride: ""
+fullnameOverride: ""
+
+terminationGracePeriod: 30
+
+image:
+  repository: gcr.io/odlli-platform/notification-service
+  tag: latest
+  pullPolicy: Always
+  pullSecrets: gcr-odlli-json-key
+
+env:
+  profile: prod
+  db:
+    host: staging-postgresql-postgresql
+    port: 5432
+    secret: prod-postgres-secret
+  oauth:
+    secret: prod-oauth-secret
+  aws:
+    ses:
+      secretName: prod-ses-secret
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    certmanager.k8s.io/cluster-issuer: prod-letsencrypt
+  paths:
+    - /notification
+  hosts:
+    - api.odlli.com
+  tls:
+    - secretName: prod-letsencrypt-tls-secret
+      hosts:
+        - api.odlli.com

@@ -3,11 +3,21 @@ entries:
   landing-client:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-01-22T21:58:33.248089+02:00
+    created: 2019-01-28T23:05:57.815147+02:00
     description: A Helm chart for Kubernetes
     digest: 75740795cbb84a8e9c3f63653ceb79c534fcae568e3ad60d0188e0eaf00ed053
     name: landing-client
     urls:
     - https://helm.odlli.info/repo/landing-client-0.1.0.tgz
     version: 0.1.0
-generated: 2019-01-22T21:58:33.246836+02:00
+  notification-service:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-01-28T23:05:57.815445+02:00
+    description: A Helm chart for Kubernetes
+    digest: a8b9b61fc59f4e961e09b7e4b0373a0e6a4117f726eda7ed20917bb808963f27
+    name: notification-service
+    urls:
+    - https://helm.odlli.info/repo/notification-service-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-01-28T23:05:57.814017+02:00
