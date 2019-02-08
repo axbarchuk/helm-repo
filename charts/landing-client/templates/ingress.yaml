@@ -1,6 +1,6 @@
 {{- $fullName := include "landing-client.fullname" . -}}
-  {{- $servicePort := .Values.service.port -}}
-  {{- $ingressPaths := .Values.ingress.paths -}}
+{{- $servicePort := .Values.service.port -}}
+{{- $ingressPaths := .Values.ingress.paths -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:

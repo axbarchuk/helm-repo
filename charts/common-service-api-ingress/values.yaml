@@ -3,8 +3,10 @@ ingress:
   annotations:
     certmanager.k8s.io/cluster-issuer: issuer-letsencrypt
   host: api.odlli.com
-  paths:
-    - /notification
+  services:
+    - name: notification-service
+      port: 8080
+      path: /notification
 
 certificate:
   name: api-odlli-com-crt

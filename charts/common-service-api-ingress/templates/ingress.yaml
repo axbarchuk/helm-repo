@@ -1,13 +1,11 @@
-{{- $fullName := include "notification-service.fullname" . -}}
-{{- $servicePort := .Values.service.port -}}
-{{- $ingressPaths := .Values.ingress.paths -}}
+{{- $services := .Values.ingress.services -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: {{ $fullName }}
+  name: {{ .Release.Name }}
   labels:
-    app.kubernetes.io/name: {{ include "notification-service.name" . }}
-    helm.sh/chart: {{ include "notification-service.chart" . }}
+    app.kubernetes.io/name: {{ include "common-service-api-ingress.name" . }}
+    helm.sh/chart: {{ include "common-service-api-ingress.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
   annotations:
@@ -20,11 +18,11 @@ spec:
     - host: {{ .Values.ingress.host }}
       http:
         paths:
-          {{- range $ingressPaths }}
-          - path: {{ . }}
+          {{- range $services }}
+          - path: {{ .path }}
             backend:
-              serviceName: {{ $fullName }}
-              servicePort: {{ $servicePort }}
+              serviceName: {{ .name }}
+              servicePort: {{ .port }}
           {{- end }}
   tls:
     - hosts:
