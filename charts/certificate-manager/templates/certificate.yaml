@@ -8,7 +8,7 @@ spec:
   commonName: {{ .Values.certificate.domain }}
   issuerRef:
     name: {{ .Values.issuer.name }}
-    kind: Issuer
+    kind: ClusterIssuer
   dnsNames:
     - {{ .Values.certificate.domain }}
     {{- range $certificateSubDomains }}
