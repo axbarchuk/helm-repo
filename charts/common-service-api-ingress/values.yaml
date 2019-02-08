@@ -1,0 +1,13 @@
+ingress:
+  class: nginx
+  annotations:
+    certmanager.k8s.io/cluster-issuer: issuer-letsencrypt
+  host: api.odlli.com
+  paths:
+    - /notification
+
+certificate:
+  name: api-odlli-com-crt
+  secretName: api-odlli-com-tls
+  issuer:
+    name: issuer-letsencrypt
