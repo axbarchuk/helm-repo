@@ -16,11 +16,15 @@ service:
   port: 5000
 
 ingress:
+  class: nginx
   annotations:
-    kubernetes.io/ingress.class: nginx
-    certmanager.k8s.io/issuer: issuer-letsencrypt
+    certmanager.k8s.io/cluster-issuer: issuer-letsencrypt
   host: odlli.com
   paths:
     - /
-  tls:
-    secretName: odlli-com-tls
+
+certificate:
+  name: odlli-com-crt
+  secretName: odlli-com-tls
+  issuer:
+    name: issuer-letsencrypt

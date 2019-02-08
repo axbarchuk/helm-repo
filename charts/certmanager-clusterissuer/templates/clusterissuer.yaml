@@ -5,7 +5,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: ax.barchuk@gmail.com
+    email: {{ .Values.issuer.email }}
     privateKeySecretRef:
       name: {{ .Values.issuer.name }}
     # Enable the HTTP-01 challenge provider

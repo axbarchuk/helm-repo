@@ -5,12 +5,12 @@ metadata:
   name: {{ .Values.certificate.name }}
 spec:
   secretName: {{ .Values.certificate.secretName }}
-  commonName: {{ .Values.certificate.domain }}
+  commonName: {{ .Values.ingress.host }}
   issuerRef:
-    name: {{ .Values.issuer.name }}
+    name: {{ .Values.certificate.issuer.name }}
     kind: ClusterIssuer
   dnsNames:
-    - {{ .Values.certificate.domain }}
+    - {{ .Values.ingress.host }}
     {{- range $certificateSubDomains }}
     - {{ . }}
     {{- end }}
@@ -19,9 +19,6 @@ spec:
   acme:
     config:
       - http01:
-          ingressClass: {{ .Values.certificate.ingress.class }}
+          ingressClass: {{ .Values.ingress.class }}
         domains:
-          - {{ .Values.certificate.domain }}
-          {{- range $certificateSubDomains }}
-          - {{ . }}
-          {{- end }}
+          - {{ .Values.ingress.host }}

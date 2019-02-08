@@ -28,11 +28,15 @@ service:
   port: 8080
 
 ingress:
+  class: nginx
   annotations:
-    kubernetes.io/ingress.class: nginx
-    certmanager.k8s.io/issuer: issuer-letsencrypt
+    certmanager.k8s.io/cluster-issuer: issuer-letsencrypt
   host: api.odlli.com
   paths:
     - /notification
-  tls:
-    secretName: odlli-com-tls
+
+certificate:
+  name: api-odlli-com-crt
+  secretName: api-odlli-com-tls
+  issuer:
+    name: issuer-letsencrypt

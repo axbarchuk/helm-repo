@@ -12,6 +12,7 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
   {{- with .Values.ingress.annotations }}
   annotations:
+    kubernetes.io/ingress.class: {{ .Values.ingress.class }}
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
@@ -28,4 +29,4 @@ spec:
   tls:
     - hosts:
         - {{ .Values.ingress.host }}
-      secretName: {{ .Values.ingress.tls.secretName }}
+      secretName: {{ .Values.certificate.secretName }}

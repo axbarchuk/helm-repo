@@ -1,0 +1,24 @@
+{{- $certificateSubDomains := .Values.certificate.subDomains -}}
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: {{ .Values.certificate.name }}
+spec:
+  secretName: {{ .Values.certificate.secretName }}
+  commonName: {{ .Values.ingress.host }}
+  issuerRef:
+    name: {{ .Values.certificate.issuer.name }}
+    kind: ClusterIssuer
+  dnsNames:
+    - {{ .Values.ingress.host }}
+    {{- range $certificateSubDomains }}
+    - {{ . }}
+    {{- end }}
+  duration: 2160h # 90d
+  renewBefore: 360h # 15d
+  acme:
+    config:
+      - http01:
+          ingressClass: {{ .Values.ingress.class }}
+        domains:
+          - {{ .Values.ingress.host }}
