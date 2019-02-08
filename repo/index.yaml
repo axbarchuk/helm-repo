@@ -3,7 +3,7 @@ entries:
   certmanager-clusterissuer:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-02-08T14:27:26.814252+02:00
+    created: 2019-02-08T14:37:28.167424+02:00
     description: A Helm chart for Kubernetes
     digest: 807faaea0bdac752a9b70640f793d1396717410a1e5a9145805e00e2c65e26c8
     name: certmanager-clusterissuer
@@ -13,9 +13,9 @@ entries:
   landing-client:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-02-08T14:27:26.815259+02:00
+    created: 2019-02-08T14:37:28.167736+02:00
     description: A Helm chart for Kubernetes
-    digest: 0e9c215cd2f7182ed54bb6aeb415c096390b3b0a07f613b3cb7e55d1280ae03a
+    digest: 62f47e54f4b22e184fb3829d5df952ee6d86fa43116ad701e900829c085ad578
     name: landing-client
     urls:
     - https://helm.odlli.info/repo/landing-client-0.1.0.tgz
@@ -23,11 +23,11 @@ entries:
   notification-service:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-02-08T14:27:26.816004+02:00
+    created: 2019-02-08T14:37:28.168209+02:00
     description: A Helm chart for Kubernetes
-    digest: fca156393473d3b8e6afafc4e1e0cde8a0908ef386bb00fc2708f0da410dfd6f
+    digest: c33562838961a55d321c80fba61a1dd2fa698bbf023c8d847b75e1032811eb49
     name: notification-service
     urls:
     - https://helm.odlli.info/repo/notification-service-0.1.0.tgz
     version: 0.1.0
-generated: 2019-02-08T14:27:26.813303+02:00
+generated: 2019-02-08T14:37:28.166538+02:00
