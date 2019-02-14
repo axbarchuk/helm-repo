@@ -3,10 +3,10 @@ replicaCount: 1
 terminationGracePeriod: 30
 
 image:
-  repository: gcr.io/odlli-platform/landing-client
+  repository: registry.gitlab.com/odlli/services/notification-service
   tag: latest
   pullPolicy: Always
-  pullSecrets: gcr-odlli-json-key
+  pullSecrets: gitlab-registry-auth
 
 nameOverride: ""
 fullnameOverride: ""
