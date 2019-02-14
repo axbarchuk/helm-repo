@@ -4,7 +4,7 @@ ingress:
     certmanager.k8s.io/cluster-issuer: issuer-letsencrypt
   host: api.odlli.com
   services:
-    - name: notification-service
+    - name: prod-notification-service
       port: 8080
       path: /notification
 
