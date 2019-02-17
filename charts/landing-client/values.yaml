@@ -3,7 +3,7 @@ replicaCount: 1
 terminationGracePeriod: 30
 
 image:
-  repository: registry.gitlab.com/odlli/services/notification-service
+  repository: registry.gitlab.com/odlli/clients/landing-client
   tag: latest
   pullPolicy: Always
   pullSecrets: gitlab-registry-auth
