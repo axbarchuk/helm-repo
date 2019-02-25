@@ -1,6 +1,7 @@
 ingress:
   class: nginx
   annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
     certmanager.k8s.io/cluster-issuer: issuer-letsencrypt
   host: api.odlli.com
   services:
