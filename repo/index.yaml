@@ -3,7 +3,7 @@ entries:
   account-service:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-13T00:00:21.996102+02:00
+    created: 2019-03-13T15:26:26.901239+02:00
     description: A Helm chart for Kubernetes
     digest: eb065867bd94786d14a6c475f08d7eec5099b9b7932cf20b32b490199ad6c71a
     name: account-service
@@ -13,17 +13,27 @@ entries:
   certmanager-clusterissuer:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-13T00:00:21.996616+02:00
+    created: 2019-03-13T15:26:26.901912+02:00
     description: A Helm chart for Kubernetes
     digest: 807faaea0bdac752a9b70640f793d1396717410a1e5a9145805e00e2c65e26c8
     name: certmanager-clusterissuer
     urls:
     - https://helm.odlli.info/repo/certmanager-clusterissuer-0.1.0.tgz
     version: 0.1.0
+  common-k8s:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-03-13T15:26:26.902196+02:00
+    description: Contains common k8s objects
+    digest: ad1890750adec370e49ec3c1f2361c485d89f30567df6dcabd1ef204f95c3103
+    name: common-k8s
+    urls:
+    - https://helm.odlli.info/repo/common-k8s-0.1.0.tgz
+    version: 0.1.0
   common-service-api-ingress:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-13T00:00:21.997369+02:00
+    created: 2019-03-13T15:26:26.902476+02:00
     description: A Helm chart for Kubernetes
     digest: ff93259ca35ffa177e14f3e90264e0cf85f934218d2886c75df3284acfa5d4a6
     name: common-service-api-ingress
@@ -33,7 +43,7 @@ entries:
   landing-client:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-03-13T00:00:21.997866+02:00
+    created: 2019-03-13T15:26:26.903111+02:00
     description: A Helm chart for Kubernetes
     digest: d555f2d5cc4fc34697b6cffc13a1719b2d447fc2e4f7ee864e44da2a404af89e
     name: landing-client
@@ -43,11 +53,11 @@ entries:
   notification-service:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-03-13T00:00:21.998255+02:00
+    created: 2019-03-13T15:26:26.90366+02:00
     description: A Helm chart for Kubernetes
     digest: 8914949d9a35c4d2857b76706e5940b1c55dad9da24c3479b28015aa79be8072
     name: notification-service
     urls:
     - https://helm.odlli.info/repo/notification-service-0.1.0.tgz
     version: 0.1.0
-generated: 2019-03-13T00:00:21.995591+02:00
+generated: 2019-03-13T15:26:26.899868+02:00
