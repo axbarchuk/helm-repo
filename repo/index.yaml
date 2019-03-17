@@ -3,17 +3,27 @@ entries:
   account-service:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-17T02:04:48.748213+02:00
+    created: 2019-03-17T23:34:03.856522+02:00
     description: A Helm chart for Kubernetes
-    digest: eb065867bd94786d14a6c475f08d7eec5099b9b7932cf20b32b490199ad6c71a
+    digest: d091dd08141e5ccfaabfd405742c03a51e8fbbcf354cfb1cbebf5e9f92127d66
     name: account-service
     urls:
     - https://helm.odlli.info/repo/account-service-0.1.0.tgz
     version: 0.1.0
+  auth-service:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-03-17T23:34:03.856741+02:00
+    description: A Helm chart for Kubernetes
+    digest: 8f6dcf1a124bd02e97ebfaaf5fb22e220b64915834e63b8010f8ce4c9d48ef19
+    name: auth-service
+    urls:
+    - https://helm.odlli.info/repo/auth-service-0.1.0.tgz
+    version: 0.1.0
   certmanager-clusterissuer:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-17T02:04:48.748622+02:00
+    created: 2019-03-17T23:34:03.857147+02:00
     description: A Helm chart for Kubernetes
     digest: 807faaea0bdac752a9b70640f793d1396717410a1e5a9145805e00e2c65e26c8
     name: certmanager-clusterissuer
@@ -23,7 +33,7 @@ entries:
   common-k8s:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-17T02:04:48.749016+02:00
+    created: 2019-03-17T23:34:03.857699+02:00
     description: Contains common k8s objects
     digest: 25cc81cf7f74291bc5e8431fed70832f7bb3fd00ecf043c703a5709fa8e55429
     name: common-k8s
@@ -33,7 +43,7 @@ entries:
   common-service-api-ingress:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-03-17T02:04:48.749631+02:00
+    created: 2019-03-17T23:34:03.858197+02:00
     description: A Helm chart for Kubernetes
     digest: ff93259ca35ffa177e14f3e90264e0cf85f934218d2886c75df3284acfa5d4a6
     name: common-service-api-ingress
@@ -43,7 +53,7 @@ entries:
   landing-client:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-03-17T02:04:48.750232+02:00
+    created: 2019-03-17T23:34:03.858733+02:00
     description: A Helm chart for Kubernetes
     digest: d555f2d5cc4fc34697b6cffc13a1719b2d447fc2e4f7ee864e44da2a404af89e
     name: landing-client
@@ -53,11 +63,11 @@ entries:
   notification-service:
   - apiVersion: v1
     appVersion: 0.1.0
-    created: 2019-03-17T02:04:48.750619+02:00
+    created: 2019-03-17T23:34:03.858968+02:00
     description: A Helm chart for Kubernetes
-    digest: 8914949d9a35c4d2857b76706e5940b1c55dad9da24c3479b28015aa79be8072
+    digest: 7e6c03e2119613f57a78dc4629cc6f88254aa372c20d2b0c889fdd2fbde7dcde
     name: notification-service
     urls:
     - https://helm.odlli.info/repo/notification-service-0.1.0.tgz
     version: 0.1.0
-generated: 2019-03-17T02:04:48.747124+02:00
+generated: 2019-03-17T23:34:03.856023+02:00
