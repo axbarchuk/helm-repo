@@ -5,7 +5,7 @@ entries:
     appVersion: "1.0"
     created: 2019-05-16T00:55:36.327323+03:00
     description: A Helm chart for Kubernetes
-    digest: d091dd08141e5ccfaabfd405742c03a51e8fbbcf354cfb1cbebf5e9f92127d66
+    digest: 91e1a31d0d627c2cf486092090aaf4e87cb65220777d958085e352aaae63743c
     name: account-service
     urls:
     - https://helm.odlli.info/repo/account-service-0.1.0.tgz
@@ -35,7 +35,7 @@ entries:
     appVersion: "1.0"
     created: 2019-05-16T00:55:36.329139+03:00
     description: Contains common k8s objects
-    digest: 25cc81cf7f74291bc5e8431fed70832f7bb3fd00ecf043c703a5709fa8e55429
+    digest: 84369537629cef43820ba630965488fa1fe463d7a77fd4c4a9938bf12e9b8f8f
     name: common-k8s
     urls:
     - https://helm.odlli.info/repo/common-k8s-0.1.0.tgz
@@ -75,7 +75,7 @@ entries:
     appVersion: 0.1.0
     created: 2019-05-16T00:55:36.331139+03:00
     description: A Helm chart for Kubernetes
-    digest: 7e6c03e2119613f57a78dc4629cc6f88254aa372c20d2b0c889fdd2fbde7dcde
+    digest: ee2f77abb590aea9c8cf8b6cbd7e14832ef608d864e4897c6b354b6eeea4ef3d
     name: notification-service
     urls:
     - https://helm.odlli.info/repo/notification-service-0.1.0.tgz
