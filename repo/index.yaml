@@ -8,7 +8,7 @@ entries:
     digest: 91e1a31d0d627c2cf486092090aaf4e87cb65220777d958085e352aaae63743c
     name: account-service
     urls:
-    - https://helm.odlli.info/repo/account-service-0.1.0.tgz
+    - https://helm.develop.odlli.com/repo/account-service-0.1.0.tgz
     version: 0.1.0
   auth-service:
   - apiVersion: v1
@@ -18,7 +18,7 @@ entries:
     digest: 8f6dcf1a124bd02e97ebfaaf5fb22e220b64915834e63b8010f8ce4c9d48ef19
     name: auth-service
     urls:
-    - https://helm.odlli.info/repo/auth-service-0.1.0.tgz
+    - https://helm.develop.odlli.com/repo/auth-service-0.1.0.tgz
     version: 0.1.0
   certmanager-clusterissuer:
   - apiVersion: v1
@@ -28,7 +28,7 @@ entries:
     digest: 807faaea0bdac752a9b70640f793d1396717410a1e5a9145805e00e2c65e26c8
     name: certmanager-clusterissuer
     urls:
-    - https://helm.odlli.info/repo/certmanager-clusterissuer-0.1.0.tgz
+    - https://helm.develop.odlli.com/repo/certmanager-clusterissuer-0.1.0.tgz
     version: 0.1.0
   common-k8s:
   - apiVersion: v1
@@ -38,7 +38,7 @@ entries:
     digest: 75a52280bd0e992cce7cb6709633ddae6743882dc3ad221e82162c4c6d4d4a2c
     name: common-k8s
     urls:
-    - https://helm.odlli.info/repo/common-k8s-0.1.0.tgz
+    - https://helm.develop.odlli.com/repo/common-k8s-0.1.0.tgz
     version: 0.1.0
   common-service-api-ingress:
   - apiVersion: v1
@@ -48,7 +48,7 @@ entries:
     digest: 8e13d28c5f516966f6194cf6cbe708a284aa09ef97bb3ad40b2e28d061b5d0f2
     name: common-service-api-ingress
     urls:
-    - https://helm.odlli.info/repo/common-service-api-ingress-0.1.0.tgz
+    - https://helm.develop.odlli.com/repo/common-service-api-ingress-0.1.0.tgz
     version: 0.1.0
   jenkins-ingress:
   - apiVersion: v1
@@ -58,7 +58,7 @@ entries:
     digest: 42223a71754f4dd7b9b0a99c6705993f0f305a20d92806ba5a9915f6cf659ff6
     name: jenkins-ingress
     urls:
-    - https://helm.odlli.info/repo/jenkins-ingress-0.1.0.tgz
+    - https://helm.develop.odlli.com/repo/jenkins-ingress-0.1.0.tgz
     version: 0.1.0
   landing-client:
   - apiVersion: v1
@@ -68,7 +68,7 @@ entries:
     digest: d555f2d5cc4fc34697b6cffc13a1719b2d447fc2e4f7ee864e44da2a404af89e
     name: landing-client
     urls:
-    - https://helm.odlli.info/repo/landing-client-0.1.0.tgz
+    - https://helm.develop.odlli.com/repo/landing-client-0.1.0.tgz
     version: 0.1.0
   notification-service:
   - apiVersion: v1
@@ -78,6 +78,6 @@ entries:
     digest: ee2f77abb590aea9c8cf8b6cbd7e14832ef608d864e4897c6b354b6eeea4ef3d
     name: notification-service
     urls:
-    - https://helm.odlli.info/repo/notification-service-0.1.0.tgz
+    - https://helm.develop.odlli.com/repo/notification-service-0.1.0.tgz
     version: 0.1.0
 generated: 2019-05-24T15:06:16.741929+03:00
