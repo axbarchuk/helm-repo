@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   atlassian-confluence:
   - apiVersion: v1
-    appVersion: 6.9.3-adoptopenjdk8
-    created: "2019-10-01T15:57:11.542492+03:00"
+    appVersion: 7.0.2-adoptopenjdk8
+    created: "2019-10-01T17:34:04.609092+03:00"
     description: Enterprise Wiki Collaboration Platform.
-    digest: 3c67b1b6138980530ca30f36f49b0de1b1acfadf15242293801a3ba366c3d4fa
+    digest: a2c65e9937df3ff13cc401422e6baeca4c7cb7d03d15b527f1e164a18e89ae5c
     home: https://www.atlassian.com/software/confluence
     keywords:
     - atlassian
@@ -19,7 +19,7 @@ entries:
   atlassian-jira-software:
   - apiVersion: v1
     appVersion: 7.10.1
-    created: "2019-10-01T15:57:11.543706+03:00"
+    created: "2019-10-01T17:34:04.610426+03:00"
     description: Project Management Tool for Agile Teams.
     digest: 0ba1c03cea3cd8514f58f89f9138bdc5e24c4970dcee86414d1fa1f6bde74f36
     home: https://www.atlassian.com/software/jira
@@ -35,7 +35,7 @@ entries:
   certmanager-clusterissuer:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-10-01T15:57:11.54422+03:00"
+    created: "2019-10-01T17:34:04.611109+03:00"
     description: A Helm chart for Kubernetes
     digest: aeb22018e4a242fb767aae867f4f551d0b747c261bbec91a4f8210cd8a8b58e9
     name: certmanager-clusterissuer
@@ -45,11 +45,11 @@ entries:
   jenkins-ingress:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-10-01T15:57:11.545151+03:00"
+    created: "2019-10-01T17:34:04.613135+03:00"
     description: A Helm chart for Kubernetes
     digest: 166863a18e97bd4d9ea6ae02dcb95a5fda044a6b555a4cd4f8bd8d3f5d6e656b
     name: jenkins-ingress
     urls:
     - https://helm.develop.odlli.com/charts/jenkins-ingress-0.1.0.tgz
     version: 0.1.0
-generated: "2019-10-01T15:57:11.539437+03:00"
+generated: "2019-10-01T17:34:04.608176+03:00"
