@@ -1,37 +1,5 @@
 apiVersion: v1
 entries:
-  atlassian-confluence:
-  - apiVersion: v1
-    appVersion: 7.0.2-adoptopenjdk8
-    created: "2019-10-01T17:34:04.609092+03:00"
-    description: Enterprise Wiki Collaboration Platform.
-    digest: a2c65e9937df3ff13cc401422e6baeca4c7cb7d03d15b527f1e164a18e89ae5c
-    home: https://www.atlassian.com/software/confluence
-    keywords:
-    - atlassian
-    - confluence
-    name: atlassian-confluence
-    sources:
-    - https://bitbucket.org/atlassian/docker-atlassian-confluence-server
-    urls:
-    - https://helm.develop.odlli.com/charts/atlassian-confluence-0.1.1.tgz
-    version: 0.1.1
-  atlassian-jira-software:
-  - apiVersion: v1
-    appVersion: 7.10.1
-    created: "2019-10-01T17:34:04.610426+03:00"
-    description: Project Management Tool for Agile Teams.
-    digest: 0ba1c03cea3cd8514f58f89f9138bdc5e24c4970dcee86414d1fa1f6bde74f36
-    home: https://www.atlassian.com/software/jira
-    keywords:
-    - atlassian
-    - jira
-    name: atlassian-jira-software
-    sources:
-    - https://github.com/cptactionhank/docker-atlassian-jira-software
-    urls:
-    - https://helm.develop.odlli.com/charts/atlassian-jira-software-0.1.0.tgz
-    version: 0.1.0
   certmanager-clusterissuer:
   - apiVersion: v1
     appVersion: "1.0"
