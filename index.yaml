@@ -3,9 +3,9 @@ entries:
   certmanager-clusterissuer:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-10-01T17:34:04.611109+03:00"
+    created: "2020-01-20T23:37:47.145047+02:00"
     description: A Helm chart for Kubernetes
-    digest: aeb22018e4a242fb767aae867f4f551d0b747c261bbec91a4f8210cd8a8b58e9
+    digest: 72e3bf7f03af42af5ce0b5a7d21e1ce4cac2ac4e0f70d7babe9f7fee441af18f
     name: certmanager-clusterissuer
     urls:
     - https://helm.develop.odlli.com/charts/certmanager-clusterissuer-0.1.0.tgz
@@ -13,11 +13,11 @@ entries:
   jenkins-ingress:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-10-01T17:34:04.613135+03:00"
+    created: "2020-01-20T23:37:47.146357+02:00"
     description: A Helm chart for Kubernetes
     digest: 166863a18e97bd4d9ea6ae02dcb95a5fda044a6b555a4cd4f8bd8d3f5d6e656b
     name: jenkins-ingress
     urls:
     - https://helm.develop.odlli.com/charts/jenkins-ingress-0.1.0.tgz
     version: 0.1.0
-generated: "2019-10-01T17:34:04.608176+03:00"
+generated: "2020-01-20T23:37:47.143923+02:00"
